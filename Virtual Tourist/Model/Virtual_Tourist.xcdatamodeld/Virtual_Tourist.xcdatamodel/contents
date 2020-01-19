@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19C57" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="MapPin" representedClassName="MapPin" syncable="YES" codeGenerationType="class">
+        <attribute name="creationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="pinLocationLat" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="pinLocationLong" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="photos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Photo"/>
+    </entity>
+    <entity name="Photo" representedClassName="Photo" syncable="YES" codeGenerationType="class">
+        <attribute name="flickr_Id" attributeType="String"/>
+        <attribute name="flickr_image" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
+        <relationship name="mapPin" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MapPin"/>
+    </entity>
+    <elements>
+        <element name="MapPin" positionX="-475.67578125" positionY="-38.6484375" width="128" height="28"/>
+        <element name="Photo" positionX="-231.3359375" positionY="-30.62109375" width="128" height="88"/>
+    </elements>
+</model>
