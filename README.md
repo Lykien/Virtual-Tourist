@@ -1,10 +1,7 @@
 # Virtual-Tourist
 
-This repository contains code for the Virtual-Tourist Udacity CoreData Project. As user you can login in and share your postion with other students.
+This repository contains code for the Virtual-Tourist Udacity CoreData Project. As user you can set a pin to a location and get related images.
+
 
 ## Overview
-
-Table Soccer Manager based on the idea to manage and track the table soccer matches within out company.
-The app contains the following features:
-- Login with Udacity User
-- Share your study position.
+- Set a pin on a location and see flickr images next to the pin.
